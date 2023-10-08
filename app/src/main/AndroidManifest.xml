@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SimpleCalendar"
         tools:targetApi="31"
-        android:name=".presentation.CalendarApplication">
+        android:name=".presentation.MyApplication">
         <activity
             android:name=".presentation.MainActivity"
             android:exported="true"
