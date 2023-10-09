@@ -30,4 +30,15 @@ class CalendarViewModel @Inject constructor() : ViewModel() {
         calendar.add(Calendar.MONTH, 1)
         _selectedDate.value = calendar.time
     }
+
+    fun selectYearMonth(year: Int, month: Int) {
+        val calendar = Calendar.getInstance()
+        calendar.set(Calendar.YEAR, year)
+
+        if (month != -1) {
+            calendar.set(Calendar.MONTH, month)
+            _selectedDate.value = calendar.time
+        }
+    }
+
 }
